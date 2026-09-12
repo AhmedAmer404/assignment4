@@ -42,6 +42,22 @@ class Program
         prices = new double[] { 10.0, 12.5, 15.0 };
     }
     #endregion
+
+    #region Question 9
+    static bool TryGetPrice(string bookTitle, out double price)
+    {
+        if (bookTitle == "Clean Code")
+        {
+            price = 25.5;
+                return true;
+        }
+        else
+        {
+            price = 0.0;
+            return false;
+        }
+    }
+    #endregion
     static void Main(string[] args)
     {
         #region Question 1
@@ -92,6 +108,19 @@ class Program
         double[] prices2= {25.5, 40.0 };
         ReplaceArray(ref prices2);
         Console.WriteLine(prices2.Length); // because we are passing by reference original is modified to new array of length 3
+        #endregion
+
+        #region Question 9
+        double price1;
+        if(TryGetPrice("Clean Code", out price1))
+        {
+            Console.WriteLine(price1); 
+        }
+        else
+        {
+            Console.WriteLine("Book not found");
+        }   
+
         #endregion
 
 
