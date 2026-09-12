@@ -14,6 +14,13 @@ class Program
         Console.WriteLine("Book Title: " + title);
     }
     #endregion
+
+    #region Question 5
+    static void AddBonusPages(int pages)
+    {
+        pages += 50;
+    }
+    #endregion
     static void Main(string[] args)
     {
         #region Question 1
@@ -40,5 +47,13 @@ class Program
         #region Question 4
         PrintBookTitle("Clean Code");
         #endregion
+
+        #region Question 5
+        int pages = 400;
+        AddBonusPages(pages);
+        Console.WriteLine(pages); // because we are passing by value original still remains 400
+        #endregion
+
+
     }
 }
