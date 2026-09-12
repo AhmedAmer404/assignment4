@@ -58,6 +58,13 @@ class Program
         }
     }
     #endregion
+
+    #region Question 10
+    static void PrintBookInfo(string title , int pages = 300)
+    {
+        Console.WriteLine("Book Title: " + title + ", Pages: " + pages);
+    }
+    #endregion
     static void Main(string[] args)
     {
         #region Question 1
@@ -119,8 +126,14 @@ class Program
         else
         {
             Console.WriteLine("Book not found");
-        }   
+        }
 
+        #endregion
+
+        #region Question 10
+        PrintBookInfo("Clean Code");
+        PrintBookInfo("Clean Code", 900);
+     
         #endregion
 
 
