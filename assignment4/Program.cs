@@ -35,6 +35,13 @@ class Program
         pages += 50;
     }
     #endregion
+
+    #region Question 8
+    static void ReplaceArray(ref double[] prices)
+    {
+        prices = new double[] { 10.0, 12.5, 15.0 };
+    }
+    #endregion
     static void Main(string[] args)
     {
         #region Question 1
@@ -79,6 +86,12 @@ class Program
         AddBonusPagesByRef(ref pagesByRef);
         Console.WriteLine(pagesByRef); // because we are passing by reference original is modified to 450
 
+        #endregion
+
+        #region Question 8
+        double[] prices2= {25.5, 40.0 };
+        ReplaceArray(ref prices2);
+        Console.WriteLine(prices2.Length); // because we are passing by reference original is modified to new array of length 3
         #endregion
 
 
