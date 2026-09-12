@@ -9,5 +9,14 @@ class Program
         Console.WriteLine(Prices[1])
 ;
         #endregion
+
+        #region Question 2
+        int[,] ShelfCopies =
+        {
+            {3,5 },
+            {1,4 }
+        };
+        Console.WriteLine(ShelfCopies[1, 0]);
+        #endregion
     }
 }
