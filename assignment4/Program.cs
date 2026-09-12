@@ -7,6 +7,13 @@ class Program
         Console.WriteLine("Welcome to the Library!");
     }
     #endregion
+
+    #region Question 4
+    static void PrintBookTitle (string title)
+    {
+        Console.WriteLine("Book Title: " + title);
+    }
+    #endregion
     static void Main(string[] args)
     {
         #region Question 1
@@ -28,6 +35,10 @@ class Program
         #region Question 3
         PrintWelcomeMessage();
 
+        #endregion
+
+        #region Question 4
+        PrintBookTitle("Clean Code");
         #endregion
     }
 }
