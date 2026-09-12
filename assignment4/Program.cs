@@ -66,7 +66,17 @@ class Program
     }
     #endregion
 
-   
+    #region Question 12
+    static void PrintAllTitles(params string[] titles)
+    {
+        foreach (string title in titles)
+        {
+            Console.WriteLine(title);
+        }
+    }
+    #endregion
+
+
     static void Main(string[] args)
     {
         #region Question 1
@@ -142,6 +152,11 @@ class Program
         PrintBookInfo(pages: 500, title: "Clean Code");
 
         #endregion
+
+        #region Question 12
+        PrintAllTitles("Clean Code", "Csharp", "Backend");
+        #endregion
+
 
 
     }
