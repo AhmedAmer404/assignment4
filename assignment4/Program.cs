@@ -28,6 +28,13 @@ class Program
         prices[0] -= 5;
     }
     #endregion
+
+    #region Question 7
+    static void AddBonusPagesByRef(ref int pages)
+    {
+        pages += 50;
+    }
+    #endregion
     static void Main(string[] args)
     {
         #region Question 1
@@ -65,6 +72,13 @@ class Program
         double[] prices = [25.5, 40.0];
         AppplyDiscount(prices);
         Console.WriteLine(prices[0]); // because we are passing by reference original is modified to 20.5
+        #endregion
+
+        #region question 7
+        int pagesByRef = 400;
+        AddBonusPagesByRef(ref pagesByRef);
+        Console.WriteLine(pagesByRef); // because we are passing by reference original is modified to 450
+
         #endregion
 
 
